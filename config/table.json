@@ -1,0 +1,19 @@
+{
+  "id": 0,
+  "tables": [
+    {
+      "id": 0,
+      "desc": "",
+      "schema": "",
+      "table": "",
+      "criterion_delete": ""
+    },
+    {
+      "id": 0,
+      "desc": "",
+      "schema": "dbo",
+      "table": "",
+      "criterion_delete": ""
+    }
+  ]
+}

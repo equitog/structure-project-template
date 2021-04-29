@@ -1,0 +1,68 @@
+{
+    "mails": [
+      {
+        "id": 0,
+        "title": "TEAM DEVELOPMENT",
+        "subject": "ACTIVE DIRECTORY - ALERTA DE UNA EXCEPECION",
+        "from": "",
+        "to": "",
+        "cc": "",
+        "bcc": "",
+        "body": "",
+        "template_html": "",
+        "attachment": false,
+        "dir": [],
+        "host": "",
+        "password": "@",
+        "port_pop": 
+      },
+      {
+        "id": 1,
+        "title": "TEAM DEVELOPMENT",
+        "subject": "ACTIVE DIRECTORY - ALERTA DE UNA EXCEPECION",
+        "from": "",
+        "to": "",
+        "cc": "",
+        "bcc": "",
+        "body": "",
+        "template_html": "",
+        "attachment": false,
+        "dir": [],
+        "host": "smtp.gmail.com",
+        "password": "",
+        "port_pop": 995
+      },
+      {
+        "id": 2,
+        "title": "SEND BAJAS AD",
+        "subject": "",
+        "from": "@",
+        "to": "@",
+        "cc": "",
+        "bcc": "",
+        "body": "",
+        "template_html": "",
+        "attachment": false,
+        "dir": [],
+        "host": "",
+        "password": "@",
+        "port_pop": 
+      },
+      {
+        "id": 3,
+        "title": "Test",
+        "subject": "Test",
+        "from": "",
+        "to": "",
+        "cc": "",
+        "bcc": "",
+        "body": "",
+        "template_html": "",
+        "attachment": false,
+        "dir": [],
+        "host": "",
+        "password": "",
+        "port_pop": 
+      }
+    ]
+  }
