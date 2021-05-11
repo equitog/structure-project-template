@@ -2,11 +2,10 @@ from os import path
 from datetime import datetime, timedelta
 import json
 import pytz
-from root_dir import get_root_dir
 
 
 class ConfigJson(object):
-    __root_dir = get_root_dir()
+    __root_dir = path.dirname(path.abspath(__name__))
 
     def get_content_json(self, file_json: str = 'date') -> dict:
         dir_json = self.__root_dir + f'\\config\\{file_json}.json'
