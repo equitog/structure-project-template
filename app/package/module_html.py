@@ -1,4 +1,4 @@
-from root_dir import get_root_dir
+from get_root_dir import get_root_dir
 
 
 class Html(object):

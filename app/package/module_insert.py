@@ -1,9 +1,9 @@
-from util_class.module_config import ConfigJson
+from module_config import ConfigJson
 import sqlalchemy
 from os import path
 from pandas import DataFrame
-from util_class.mail import Mail
-from util_class.module_html import Html
+from mail import Mail
+from module_html import Html
 
 
 def insert(data: DataFrame, msg_boolean: bool, id_database: int, id_table: int):

@@ -1,8 +1,8 @@
 from os import path
 import pyodbc
-from util_function.module_config import ConfigJson
-from util_class.module_html import Html
-from util_class.mail import Mail
+from module_config import ConfigJson
+from module_html import Html
+from mail import Mail
 
 
 def delete_by_date(dates: tuple, msg_boolean: bool, id_database: int, id_table: int):
