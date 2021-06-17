@@ -3,6 +3,7 @@ from email import encoders
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
+import os
 
 
 class Mail:
@@ -113,8 +114,9 @@ class Mail:
                     encoders.encode_base64(part)
                     part.add_header(
                         "Content-Disposition",
-                        "attachment", filename=path
+                        "attachment", filename=os.path.basename(path)
                     )
+                    message.attach(part)
 
         __body_text = message.as_string()
 
