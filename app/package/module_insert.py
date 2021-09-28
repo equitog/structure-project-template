@@ -17,7 +17,7 @@ def insert(data: DataFrame, msg_boolean: bool, id_database: int, id_table: int):
     """
 
     # 1. Set id database
-    file_database = ConfigJson().get_content_json_date(file_json='db')["database"][id_database]
+    file_database = ConfigJson().get_content_json(file_json='db')["database"][id_database]
     host = file_database['HOST']
     name = file_database['NAME']
     user = file_database['USER']
@@ -25,7 +25,7 @@ def insert(data: DataFrame, msg_boolean: bool, id_database: int, id_table: int):
     driver = file_database['DRIVER']
 
     # 2. Set table
-    file_table = ConfigJson().get_content_json_date(file_json='table')["table"][id_table]
+    file_table = ConfigJson().get_content_json(file_json='table')["table"][id_table]
     schema = file_table['SCHEMA']
     table_name = file_table['TABLE_NAME']
 
@@ -55,7 +55,7 @@ def insert(data: DataFrame, msg_boolean: bool, id_database: int, id_table: int):
         html = html.format(class_error, err, file_error, line_error, 'json', 'url')
 
         # 03. Send email with the exception
-        config_email = ConfigJson().get_content_json_date(file_json='mail')['mails'][0]
+        config_email = ConfigJson().get_content_json(file_json='mail')['mails'][0]
         mail = Mail(host=config_email['host'],
                     user=config_email['from'],
                     password=config_email['password'])
