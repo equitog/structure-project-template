@@ -1,8 +1,8 @@
-from get_root_dir import get_root_dir
+import os
 
 
 class Html(object):
-    __root_html = get_root_dir()
+    __root_html =  os.path.dirname(os.path.abspath(__name__))
 
     def __init__(self, name_file: str):
         self.__name_file = name_file
